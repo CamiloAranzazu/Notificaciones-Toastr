@@ -1,6 +1,6 @@
 # Notification
 
-Esta es una palicacion web Responsive- de notificaciones genéricas. 
+Esta es una aplicación web (Responsiva) de notificaciones genéricas. donde puedes personalizar la notificación
 
 ## Descripción
 
