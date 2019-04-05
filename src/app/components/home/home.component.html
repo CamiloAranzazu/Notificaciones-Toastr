@@ -1,0 +1,46 @@
+<div class="constainer fadeIn animated fast">
+    <hr>
+    <div class="shadow-lg p-3 mb-5 bg-white text-center">
+        <h3>Notificación</h3>
+        <hr>
+        <button (click)="Execnotificacion()" class="btn btn-outline-success my-2 my-sm-0 colorBtn" type="button">Start Notificación</button>
+    </div>
+</div>
+<div class="constainer fadeIn animated fast">
+    <hr>
+    <div class="shadow-lg p-3 mb-5 bg-white ">
+        <h3 class="text-center">Personalizar notificacion</h3>
+        <hr>
+        <div class="row container">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>Seleccione tipo de notificación</label>
+                    <select [(ngModel)]="tipoNotificacion" class="form-control" id="exampleFormControlSelect1">
+                                <option value='Exito'>Notificación de exito</option>
+                                <option value='Advertencia'>Notificación de Advertencia</option>
+                                <option value='Error'>Notificación de Error</option>
+                   </select>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <label>Titulo</label>
+                <input [(ngModel)]="titleNot" type="text" class="form-control" placeholder="titulo">
+                <label>Mensaje</label>
+                <textarea [(ngModel)]="mensajeNot" class="form-control " placeholder="Mensaje"></textarea>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>Seleccione duración</label>
+                    <select [(ngModel)]="tiempo" class="form-control" id="exampleFormControlSelect1">
+                                <option value='1000'>Un segundo</option>
+                                <option value='2000'>Dos segundos</option>
+                                <option value='3000'>Tres segundos</option>
+                                <option value='5000'>Cinco segundos</option>
+                                <option value='10000'>Dies segundos</option>
+                   </select>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
